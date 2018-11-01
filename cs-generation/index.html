@@ -92,15 +92,20 @@ header {
 
             </caption>
         </table>
-<br>
-        <h5>
-<B>Explanation:</B>
-In this case, the code-switching points appear at nouns
-(causality, input), verbs (output, depend on) and an adverb (at any time).
-The rule-based approach "noun" is accurate, but cannot find out all CSPs.
-The proposed method with POS tagging can find out more CSPs.
-</h5>
 
+        <div class="bd-example">
+            <details>
+            <summary>
+                <B>Explanation:</B>
+            </summary>
+            <p>
+                In this case, the code-switching points appear at nouns
+                (causality, input), verbs (output, depend on) and an adverb (at any time).
+                The rule-based approach "noun" is accurate, but cannot find out all CSPs.
+                The proposed method with POS tagging can find out more CSPs.
+            </p>
+            </details>
+        </div>
 <br>
 <br>
         <h4 align="center">SEAME</h4>
@@ -154,14 +159,20 @@ The proposed method with POS tagging can find out more CSPs.
             </tbody>
         </table>
 
-<br>
-        <h5>
-<B>Explanation:</B>
-In this case, the code-switching points appear at a noun (gym)
-and an interjection (huh).
-Also, the rule-based approach "noun" is accurate, but cannot find out all CSPs.
-The proposed method with POS tagging can find out all CSPs.
-</h5>
+
+        <div class="bd-example">
+            <details>
+            <summary>
+                <B>Explanation:</B>
+            </summary>
+            <p>
+                In this case, the code-switching points appear at a noun (gym)
+                and an interjection (huh).
+                Also, the rule-based approach "noun" is accurate, but cannot find out all CSPs.
+                The proposed method with POS tagging can find out all CSPs.
+            </p>
+            </details>
+        </div>
 <br>
 <br>
         <h3 align="center">Part 2: Code-switching generation examples</h3>
@@ -241,21 +252,28 @@ The proposed method with POS tagging can find out all CSPs.
             </tbody>
         </table>
 
-<br>
-<br>
-
-        <h5>
-<B>Explanation:</B>
-``causality,'' ``probably'' and ``wow'' are switched by our model in the examples.
-It shows that our proposed method can transform some Chinese sentences
-into reasonable code-switching sentences.
-However, it also generated terrible sentences because bad translation directly from Chinese to English.
-For example, ``那~那'' is a filled pause which should be translated into ``well'' in this sentence.
-But it cannot be correctly translated due to the constraint of our translator.
-Besides, ``we" and ``people " may appear simultaneously in Chinese but not in English.
-Hence, our model generated a strange sentence because of speaking style in different language.
-        </h5>
+        <div class="bd-example">
+            <details>
+            <summary>
+                <B>Explanation:</B>
+            </summary>
+            <p>
+                ``causality,'' ``probably'' and ``wow'' are switched by our model in the examples.
+                It shows that our proposed method can transform some Chinese sentences
+                into reasonable code-switching sentences.
+                However, it also generated terrible sentences because bad translation directly from Chinese to English.
+                For example, ``那~那'' is a filled pause which should be translated into ``well'' in this sentence.
+                But it cannot be correctly translated due to the constraint of our translator.
+                Besides, ``we" and ``people " may appear simultaneously in Chinese but not in English.
+                Hence, our model generated a strange sentence because of speaking style in different language.
+            </p>
+            </details>
+        </div>
     </div>
+<br>
+<br>
+<br>
+<br>
 
 </body>
 </html>
