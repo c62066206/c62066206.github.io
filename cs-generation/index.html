@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<!--
     <meta http-equiv="refresh" content="100">
+-->
     <title>Code-switching Sentence Generation</title>
     <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -82,7 +84,7 @@
 <B>Explanation:</B>
 In this case, the code-switching points appear at nouns
 (causality, input), verbs (output, depend on) and an adverb (at any time).
-The rule-based approach is accurate, but cannot find out all CSPs.
+The rule-based approach "noun" is accurate, but cannot find out all CSPs.
 The proposed method with POS tagging can find out more CSPs.
 </h5>
 
@@ -99,44 +101,51 @@ The proposed method with POS tagging can find out more CSPs.
                 <tr>
                     <td>Ground truth
                     </td>
-                    <td>To be built ...
+                    <td>HUH 你們 要 去 哦 你們 要 去 GYM 啊
                     </td>
                 </tr>
-<!--
                 <tr>
                     <td>Input
                     </td>
-                    <td>因果性 這個 也是 讀 過 的 就是 指 我 輸出 在任意時間 只 取決於 輸入 <br>
-(Causality, this is also what you have read, that means what I output at any time only depends on input)
+                    <td>哼 你們 要 去 哦 你們 要 去 體育館 啊<br>
+(Huh? Will you go? Will you go to the gym?)
                     </td>
                 </tr>
                 <tr>
                     <td>Random
                     </td>
-                    <td>因果性 this 也是 讀 過 的 就是 指 我 output 在任意時間 只 取決於 輸入
+                    <td>哼 YOU GUYS 要 GO 哦 你們 要 去 體育館
                     </td>
                 </tr>
                 <tr>
                     <td>Noun
                     </td>
-                    <td>Causality 這個 也是 讀 過 的 就是 指 我 輸出 在任意時間 只 取決於 input
+                    <td>哼 你們 要 去 哦 你們 要 去 GYM 啊
                     </td>
                 </tr>
                 <tr>
                     <td>Proposed
                     </td>
-                    <td>Causality this also 你 所 read 過 的 就是 指 我 output 在任意時間 只 取決於 輸入
+                    <td>哼 YOU GUYS 要 去 哦 你們 要 去 體育館 啊
                     </td>
                 </tr>
                 <tr>
                     <td>Proposed (+pos)
                     </td>
-                    <td>Causality 這個 也是 讀 過 的 就是 指 我 output at-any-time 只 depend-on 輸入
+                    <td>HUH 你們 要 去 哦 你們 要 去 GYM 啊
                     </td>
                 </tr>
--->
             </tbody>
         </table>
+
+<br>
+        <h5>
+<B>Explanation:</B>
+In this case, the code-switching points appear at a noun (gym)
+and an interjection (huh).
+Also, the rule-based approach "noun" is accurate, but cannot find out all CSPs.
+The proposed method with POS tagging can find out all CSPs.
+</h5>
 <br>
 <br>
         <h3 align="center">Part 2: Code-switching generation examples</h3>
