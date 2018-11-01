@@ -6,35 +6,45 @@
     <meta http-equiv="refresh" content="100">
 -->
     <title>Code-switching Sentence Generation</title>
-    <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-</head>
-<body>
-    <div class="container">
-        <h1 align="center">Code-switching Sentence Generation</h1>
-        <h3 align="center">by Generative Adversarial Network and its Application to Data Augmentation</h3>
+
+<style>
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+</style>
 
 <!--
 -->
-<br>
-        <h4 align="right">Authors: Ching-Ting Chang, Shun-Po Chuang, Hung-Yi Lee</h3>
-        <h4 align="right">Article link: (to be set)</h3>
 
+</head>
+<body>
 
-<br>
+<header>
+        <h1 align="center">Code-switching Sentence Generation</h1>
+        <h2 align="center">by Generative Adversarial Network and its Application to Data Augmentation</h3>
+
+        <h5 align="right">　</h5>
+        <h5 align="right">Ching-Ting Chang, Shun-Po Chuang, Hung-Yi Lee</h5>
+        <h5 align="right">Article link (to be set)</h5>
+</header>
+
+    <div class="container">
 <br>
         <h3 align="center">Part 1: Code-switching point (CSP) prediction examples</h3>
 <br>
 
-        <h4 align="center">LectureSS (the same as Table. 4 in paper)</h4>
+        <h4 align="center">LectureSS</h4>
+        <h5 align="center">(the same as Table. 4 in the article)</h5>
         <table class="table table-striped">
-            <col width="50">
-            <col width="200">
+            <col width="35%">
+            <col width="65%">
             <thead>
                 <tr>
                     <th scope="col" class="text-center"> </th>
@@ -43,45 +53,48 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Ground truth
+                    <td align="center">Ground truth
                     </td>
                     <td>Causality 這個 也是 讀 過 的 就是 指 我 output at-any-time 只 depend-on input
                     </td>
                 </tr>
                 <tr>
-                    <td>Input
+                    <td align="center">Input
                     </td>
                     <td>因果性 這個 也是 讀 過 的 就是 指 我 輸出 在任意時間 只 取決於 輸入 <br>
 (Causality, this is also what you have read, that means what I output at any time only depends on input)
                     </td>
                 </tr>
                 <tr>
-                    <td>Random
+                    <td align="center">Random
                     </td>
                     <td>因果性 this 也是 讀 過 的 就是 指 我 output 在任意時間 只 取決於 輸入
                     </td>
                 </tr>
                 <tr>
-                    <td>Noun
+                    <td align="center">Noun
                     </td>
                     <td>Causality 這個 也是 讀 過 的 就是 指 我 輸出 在任意時間 只 取決於 input
                     </td>
                 </tr>
                 <tr>
-                    <td>Proposed
+                    <td align="center">Proposed
                     </td>
                     <td>Causality this also 你 所 read 過 的 就是 指 我 output 在任意時間 只 取決於 輸入
                     </td>
                 </tr>
                 <tr>
-                    <td>Proposed (+pos)
+                    <td align="center">Proposed (+pos)
                     </td>
                     <td>Causality 這個 也是 讀 過 的 就是 指 我 output at-any-time 只 depend-on 輸入
                     </td>
                 </tr>
             </tbody>
-        </table>
+            <caption>
 
+            </caption>
+        </table>
+    </div>
 <br>
         <h5>
 <B>Explanation:</B>
@@ -95,8 +108,8 @@ The proposed method with POS tagging can find out more CSPs.
 <br>
         <h4 align="center">SEAME</h4>
         <table class="table table-striped">
-            <col width="50">
-            <col width="250">
+            <col width="35%">
+            <col width="65%">
             <thead>
                 <tr>
                     <th scope="col" class="text-center"> </th>
@@ -105,40 +118,40 @@ The proposed method with POS tagging can find out more CSPs.
             </thead>
             <tbody>
                 <tr>
-                    <td>Ground truth
+                    <td align="center">Ground truth
                     </td>
-                    <td>HUH 你們 要 去 哦 你們 要 去 GYM 啊
+                    <td>Huh 你們 要 去 哦 你們 要 去 gym 啊
                     </td>
                 </tr>
                 <tr>
-                    <td>Input
+                    <td align="center">Input
                     </td>
                     <td>哼 你們 要 去 哦 你們 要 去 體育館 啊<br>
 (Huh? Will you go? Will you go to the gym?)
                     </td>
                 </tr>
                 <tr>
-                    <td>Random
+                    <td align="center">Random
                     </td>
-                    <td>哼 YOU GUYS 要 GO 哦 你們 要 去 體育館
-                    </td>
-                </tr>
-                <tr>
-                    <td>Noun
-                    </td>
-                    <td>哼 你們 要 去 哦 你們 要 去 GYM 啊
+                    <td>哼 you guys 要 go 哦 你們 要 去 體育館
                     </td>
                 </tr>
                 <tr>
-                    <td>Proposed
+                    <td align="center">Noun
                     </td>
-                    <td>哼 YOU GUYS 要 去 哦 你們 要 去 體育館 啊
+                    <td>哼 你們 要 去 哦 你們 要 去 gym 啊
                     </td>
                 </tr>
                 <tr>
-                    <td>Proposed (+pos)
+                    <td align="center">Proposed
                     </td>
-                    <td>HUH 你們 要 去 哦 你們 要 去 GYM 啊
+                    <td>哼 you guys 要 去 哦 你們 要 去 體育館 啊
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">Proposed (+pos)
+                    </td>
+                    <td>Huh 你們 要 去 哦 你們 要 去 gym 啊
                     </td>
                 </tr>
             </tbody>
